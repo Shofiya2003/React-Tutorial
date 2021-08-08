@@ -2,9 +2,10 @@ import logo from './logo.svg';
 import './App.css';
 import Practice from './Components/FunctionalComponent/Practice'
 import ClassC from './Components/FunctionalComponent/ClassComponene/ClassC';
-
+import Tutorial from './Components/StatesInClassCom/Tutorial'
 import React,{Component} from 'react';
 import {useState} from 'react';
+import PropsTut from './Components/FunctionalComponent/PropsTut';
 
 
 
@@ -20,10 +21,10 @@ function App() {
     setData(names[n]);
   }
 
-  
-  function update(){
-    updateNumber(number+1);
+  function greet(){
+    alert("Good morning")
   }
+
   console.log("-------------");
   return (
     <div className="App">
@@ -34,8 +35,14 @@ function App() {
       <PracticeFunctional />
       <ClassC />
       <User /> */}
+      {/* States in Functional Component */}
       <button onClick={Clicked}>Update Name</button>
-      <button onClick={update}>Increase</button>
+      <button onClick={()=>{updateNumber(number+1)}}>Increase</button>
+      <Tutorial />
+
+      <PropsTut greeting={greet} info={"Shofiya"} email={"sh@g.com"} other={{mobile:"222",address:"delhi"}}/>
+      {/* <PropsTut info={"Nobita"} email={"xyz@yah.com"} other={{mobile:"211",address:"japan"}}/>
+      <PropsTut info={"Shinchan"} email={"schan@mail.in"} other={{mobile:"234",address:"japan"}} /> */}
     </div>
   );
 }
