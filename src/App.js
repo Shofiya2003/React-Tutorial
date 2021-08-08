@@ -40,6 +40,9 @@ function App() {
       <button onClick={()=>{updateNumber(number+1)}}>Increase</button>
       <Tutorial />
 
+
+      
+{/* YE WALA FUNCTION greet(); */}
       <PropsTut greeting={greet} info={"Shofiya"} email={"sh@g.com"} other={{mobile:"222",address:"delhi"}}/>
       {/* <PropsTut info={"Nobita"} email={"xyz@yah.com"} other={{mobile:"211",address:"japan"}}/>
       <PropsTut info={"Shinchan"} email={"schan@mail.in"} other={{mobile:"234",address:"japan"}} /> */}
