@@ -1,16 +1,17 @@
 import React from "react";
 import NavItem from "./NavItem";
 import NavSocialItem from "./NavSocialItem";
-import {Helmet} from "react-helmet";
+// import {Helmet} from "react-helmet";
 import {Link} from "react-router-dom";
+import '../stylesNav.css';
 
 function Navbar(){
     return(
         <div className="wrapper">
-         <Helmet>
+         {/* <Helmet>
         <link rel="stylesheet" href="stylesNav.css"/>
        
-        </Helmet> 
+        </Helmet>  */}
     <nav className="flex-nav">
       <ul>
        
